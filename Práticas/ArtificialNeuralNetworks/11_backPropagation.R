@@ -6,7 +6,7 @@ backwardPropagation <- function(X, y, cache, params, list_layer_size){
   A2 <- cache$A2 
   A1 <- cache$A1 
   W2 <- params$W2 
-  dZ2 <- A2 - y 
+  dZ2 <- A2 - as.vector(y) 
   dW2 <- 1/m * (dZ2 %*% t(A1))  
   db2 <- matrix(1/m * sum(dZ2), nrow = n_y) 
   db2_new <- matrix(rep(db2, m), nrow = n_y) 

@@ -1,0 +1,11 @@
+data(iris) 
+dataset<-iris 
+j<-which(dataset$Species=='versicolor') 
+k<-which(dataset$Species=='virginica') 
+l<-which(dataset$Species=='setosa') 
+dataset[,2]<-dataset[,3] 
+dataset[j,3]<-1 
+dataset[k,3]<-0 
+dataset[l,3]<-0 
+dataset<-dataset[,c(1,2,3)] 
+colnames(dataset)[3]<-'Species'

@@ -37,7 +37,7 @@
 - [x] to the training data, represented as (y, x1, x2, ..., xN), to assess whether f is really the function that determines the relationship between the target variable y and the independent variables (x1, x2, ..., xN).
 
 ## 7. In the k-means algorithm, as the value of the input parameter k increases, the sum of the within clusters quadratic errors:
-- [ ] increase.
+- [x] increase.
 - [ ] does not change.
 - [ ] may increase or decrease.
 - [ ] decrease.
